@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will you be my Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-hearts"></div>
+    <!-- Screen 1: Landing -->
+    <div id="landing-screen" class="screen active">
+        <div class="card">
+            <h1>Will you be my Valentine? 💖</h1>
+            <div class="buttons">
+                <button id="yes-btn" class="btn yes-btn">YES 💕</button>
+                <button id="no-btn" class="btn no-btn">NO 😅</button>
+            </div>
+        </div>
+    </div>
+    <!-- Screen 2: Name Input -->
+    <div id="name-screen" class="screen hidden">
+        <div class="card">
+            <h2>Before we continue... what’s your name? 😊</h2>
+            <input type="text" id="name-input" placeholder="Your beautiful name here..." autocomplete="off">
+            <button id="continue-btn" class="btn highlight-btn">Continue</button>
+        </div>
+    </div>
+    <!-- Screen 3: Final Message -->
+    <div id="final-screen" class="screen hidden">
+        <div class="card">
+            <h2 id="final-message"></h2>
+            <p>I guess the answer was always YES 😘</p>
+            <p class="signature">Happy Valentine’s Day!</p>
+            <div class="celebration">🎉💘🍾</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
